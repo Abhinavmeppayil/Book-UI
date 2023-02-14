@@ -1,0 +1,27 @@
+
+<app-header></app-header>
+
+
+<!-- {{mbooks | json}} -->
+<div class="container py-5 text-center mt-5 mb-5">
+    <div class="row pb-5 mb-4 ">
+        <div *ngFor="let books of mbooks " class=" col-lg-3 col-md-6 mb-4 mb-lg-0"> &nbsp;
+            <div class="card rounded cardcolor shadow-sm border-0 align-items-center"
+                style="display: flex; justify-content: center; align-items: flex-end;">
+                <div class="card-body  p-4"><img [src]="books.image" alt="Sorryy"
+                        class="img-fluid d-block mx-auto mb-3 ">
+                    <h5 class="text-dark">{{books.title}}</h5>
+                    <!-- <p class="small text-dark  font-italic">{{books.author}} </p> -->
+                    <!-- <p class="small text-dark  font-italic">Year: {{books.year}} </p> -->
+                    <!-- <p class="small text-dark  font-italic">Pages: {{books.pages}} </p> -->
+                    <a class="btn btn-outline-danger mt-auto" routerLink="wish-list"> <i
+                            class="fa fa-heart"></i></a>&nbsp;
+                    <a class="btn btn-outline-success mt-auto" routerLink="cart"> <i class="fa fa-cart-plus"></i></a>
+                </div>
+            </div>
+        </div> <br> <br>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

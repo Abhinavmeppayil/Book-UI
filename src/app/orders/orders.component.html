@@ -1,0 +1,22 @@
+<div class="order-container" style="color: white;">
+
+    <div class="order-row" *ngFor="let order of allorders">
+        <div class="left"><img src="{{order.image}}" alt=""></div>
+        <div class="right">
+            <div>
+                <h2>{{order.bookname}}</h2>
+            </div>
+            <div>
+                <h2>{{order.buyername}}</h2>
+            </div>
+            <div>
+                <p>Address:{{order.address}}</p>
+            </div>
+            <div>
+                <p>Phone:{{order.phone}}</p>
+            </div>
+        </div>
+        
+    </div>
+
+</div><br>

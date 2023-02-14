@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    /* margin: 0; */
+    font-family: 'Raleway', sans-serif;
+    /* background-color: #02152A; */
+    background-color:  #383A3F;
+    /* background-color: rgb(255, 100, 131); */
+    /* background-color: #ececec; */
+    /* background-color: rgb(232, 229, 228  ); */
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+    top: 0;
+}
+
+
+/* .card-img-top:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+} */

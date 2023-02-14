@@ -1,0 +1,19 @@
+.hlitext-center{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 300px;
+    /* margin: 10px; */
+    
+}
+/* .container{
+    padding: 20px;
+    height: 250px;
+} */
+/* section{
+    padding: 30px;
+}
+.card{
+    height: 250px;
+} */

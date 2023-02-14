@@ -1,0 +1,169 @@
+
+<app-header></app-header>
+<!-- <pre>{{allbooks | json }}</pre> -->
+
+
+
+<div class="container py-5 text-center mt-5 mb-5">
+    <div class="row pb-5 mb-4 ">
+        <div *ngFor="let books of allbooks | filter:searchterm :'title'" class=" col-lg-3 col-md-6 mb-4 mb-lg-0"> &nbsp;
+            <div  class="  card  card rounded cardcolor shadow-sm border-0 align-items-center" style="display: flex; justify-content: center; align-items: flex-end;" >
+            <div class="card-body  p-4"><img [src]="books.image" alt="Sorryy"
+                    class="img-fluid d-block mx-auto mb-3 " routerLink="/view/{{books.id}}">
+                <h5 class="text-dark">{{books.title}}</h5>
+                <!-- <p class="small text-dark  font-italic">{{books.author}} </p> -->
+                <!-- <p class="small text-dark  font-italic">Year: {{books.year}} </p> -->
+                <!-- <p class="small text-dark  font-italic">Pages: {{books.pages}} </p> -->
+                <button  (click)="addtowishlist(books)" class="btn btn-outline-danger mt-auto" > <i class="fa fa-heart"></i></button>&nbsp;
+                <button   (click)="addtocart(books)"  class="btn btn-outline-success mt-auto" > <i class="fa fa-cart-plus"></i></button>
+                <!-- <p class="small text-dark font-italic">{{books.link}}</p> -->
+
+                <!-- <ul class="list-inline small">
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                    </ul> -->
+            </div>
+        </div>
+    </div> <br> <br>
+
+</div>
+<!-- </div> -->
+
+<hr class="bg-danger mt-5 mb-5">
+
+
+
+<!-- scroll secrion start -->
+<div>
+
+<h6 style="font-weight: bolder; font-size: 20px;" class="text-center mb-3 mt-5 text-light">All Time  Bset Sellers </h6>
+
+</div>
+
+<div class="container-contain">
+    <div class="img-container">
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51u8ZRDCVoL.jpg" alt="">
+        </div>
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://www.mbibooks.com/mbibooks_details/uploads/2020/05/THE-ALCHEMISTF.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51tKfqc8SCL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img  class="img-scr" src="https://m.media-amazon.com/images/I/51zYFogJw3L.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://cdn.shopify.com/s/files/1/2789/4914/products/buy-ikigai-the-japanese-secret-to-a-long-and-happy-life-book-online-book-prakash-books-9781786330895-17400330158246_360x.jpg?v=1630966432" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr"  src="https://m.media-amazon.com/images/I/41j-s9fHJcL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img  class="img-scr" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601352433i/15823480.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/514BQV6A6GL._SX321_BO1,204,203,200_.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51PcUAhn15L._SX498_BO1,204,203,200_.jpghttps://m.media-amazon.com/images/I/51u8ZRDCVoL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="http://yooktals.in/wp-content/uploads/2022/02/Atomic-Habit.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51u8ZRDCVoL.jpg" alt="">
+        </div>
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://www.mbibooks.com/mbibooks_details/uploads/2020/05/THE-ALCHEMISTF.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51tKfqc8SCL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51zYFogJw3L.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://cdn.shopify.com/s/files/1/2789/4914/products/buy-ikigai-the-japanese-secret-to-a-long-and-happy-life-book-online-book-prakash-books-9781786330895-17400330158246_360x.jpg?v=1630966432" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/41j-s9fHJcL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601352433i/15823480.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/514BQV6A6GL._SX321_BO1,204,203,200_.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="img-scr" src="https://m.media-amazon.com/images/I/51PcUAhn15L._SX498_BO1,204,203,200_.jpghttps://m.media-amazon.com/images/I/51u8ZRDCVoL.jpg" alt="">
+        </div>
+
+
+        <div class="img-scroll">
+            <img class="-img-scr" src="http://yooktals.in/wp-content/uploads/2022/02/Atomic-Habit.jpg" alt="">
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+<!-- scroll end -->
+
+<h4 class="text-danger text-center mt-5 mb-5">Subscribe to find out the latest trending & best offers</h4>
+<div>
+    <app-footer></app-footer>
+</div>
+
+<!-- <div class="input-group mb-3 text-center">
+    <input type="text" class="form-control" placeholder="Enter Your Username" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2 ">Sign Up</button>
+  </div> -->
+<!-- <div class="text-center">
+    <input type="text" id="inpsign" class="mt-5 mb-5" placeholder="Enter You "><span><button class="bg-danger"
+            id="btnsign">sign In</button></span>
+            <button routerLink="buy">svasfga</button>
+</div> -->
+

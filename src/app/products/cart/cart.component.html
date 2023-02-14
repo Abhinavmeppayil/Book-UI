@@ -1,0 +1,55 @@
+<!-- cart without content -->
+<app-header></app-header>
+<div class="text"></div>
+<div class="container m-5 text-center mb-5" *ngIf="cartitem.length==0">
+    <div class="row m-5">
+        <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmGOogRm20WF1jH4UAp_o7it9XhMSiA-Y8S8wlF7bl1tAB30vmL4hNnzvuUemUxS-7AQ&usqp=CAU" alt="" class="mb-5">
+            <h1 class="text-dark"> Your Cart Is Empty</h1>
+            <button class="btn btn-danger" routerLink="/">Shop Now</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- cart with content -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table border border-light m-5 ">
+                <thead>
+                    <tr>
+                        <th class="text-light">Number</th>
+                        <th class="text-light">Book Name</th>
+                        <th class="text-light">Image</th>
+                        <th class="text-light">Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let books of cartitem ,let i=index">
+                    <tr>
+                        <td class="text-light">{{i+1}}</td>
+                        <td class="text-light">{{books.title}}</td>
+                        <td><img [src]="books.image" alt=""></td>
+                        <td class="text-light">$:{{books.price}}</td>
+                        <td><i class="fa fa-trash text-danger " ></i></td>
+                    
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <div style="float: right;" class="mb-5">
+                <button class="btn btn-danger">Empty Cart</button> &nbsp; 
+                <button class="btn btn-warning">View More</button> &nbsp;
+                <button class="btn btn-dark"> Check out</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+  
+
+<app-footer></app-footer>

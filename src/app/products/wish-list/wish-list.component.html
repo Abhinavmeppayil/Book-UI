@@ -1,0 +1,74 @@
+
+<!-- Empty wishlist -->
+<div class="container m-5 text-center" *ngIf="emsg">
+    <div class="row m-5">
+        <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrmGOogRm20WF1jH4UAp_o7it9XhMSiA-Y8S8wlF7bl1tAB30vmL4hNnzvuUemUxS-7AQ&usqp=CAU"
+                alt="" class="mb-5">
+            <h1 class="text-danger"> Your Wishlist Is Empty</h1>
+            <button class="btn btn-danger" routerLink="/"><i class="fa fa-home"></i></button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- wishlistcontent -->
+<!-- <div class="container py-5 text-center">
+    <div class="row pb-5 mb-4">
+        <div  class=" col-lg-3 col-md-6 mb-4 mb-lg-0"> &nbsp;
+            <div class="card rounded shadow-sm border-0 " *ngFor="let books of wishlist">
+                <div class="card-body cardcolor p-4"><img [src]="books.image" alt="" class="img-fluid d-block mx-auto mb-3">
+                    <h5 class="text-dark"></h5>
+                    <p class="small text-dark font-italic"> {{books.price}}</p> -->
+                    <!-- <p class="small text-dark font-italic">lkdjkjd</p>
+                    <a class="btn btn-outline-danger mt-auto" routerLink=""> <i class="fa fa-heart"></i></a>&nbsp;
+                    <a class="btn btn-outline-success mt-auto" routerLink="/cart"> <i class="fa fa-cart-plus"></i></a> -->
+
+<!-- 
+                    <ul class="list-inline small">
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                        <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                    </ul> -->
+                <!-- </div>
+            </div>
+        </div> <br> <br>
+
+    </div>
+</div> -->
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5" *ngFor="let books of wishlist">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" [src]="books.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder text-dark">{{books.title}}</h5>
+                            <!-- Product price-->
+                            <!-- ${{books.price}} -->
+                            <h5>Price:{{books.price}}</h5>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div  class="hlitext-center">
+                            <button class="btn btn-outline-danger mt-auto"  (click)="deletewish(books)"><i class="fa fa-trash"></i> </button> 
+                            <button class="btn btn-outline-success mt-auto" (click)="addtocart(books)"><i class="fa fa-cart-plus"></i> </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

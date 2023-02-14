@@ -1,0 +1,8 @@
+<form [formGroup]="addimages" (ngSubmit)="onSubmit()">
+
+    <input type="file" name="addimage" id=""  formControlName="addimage" (change)="changeListener($event)">
+    <input type="text" name="desp" formControlName="desp">
+    <input type="text" name="price" formControlName="price">
+    <button type="submit">submit</button>
+
+</form>

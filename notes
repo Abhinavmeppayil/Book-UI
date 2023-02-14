@@ -1,0 +1,48 @@
+                            
+                         Book app
+1.create an angular project
+2.Run angular
+3.Add Bootstrap,font Awesome
+4.lazy loading - 
+        it is process of loading components, modules etc 
+        it improves application loading time 
+        ng g m products --route products --module app.module
+
+5-add router outlet insile app.component .html
+
+6-create component should lazy loaded  in the module
+
+All-Books
+ng g c products/all-books
+cart-- ng g c products/cart
+wishlist-ng g c products/wishlist
+
+
+
+7-set up path for each component
+
+8- create page not found component 
+
+9- create header and footer component
+
+10-component design
+
+11-Backend Integration
+
+
+
+12-Backend integration 
+ng g s products/api
+
+
+13- import http client module inproduct module
+
+
+14-  Dependacy injuct httpclientmodule in api.services
+
+15-integration
+
+16- design of wishlist and cart
+
+17- search concept
+    ng g p products/pipes/filter
